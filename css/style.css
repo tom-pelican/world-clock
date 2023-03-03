@@ -1,0 +1,67 @@
+body {
+  background: #f6f4fd;
+}
+
+h1,
+select,
+.city,
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+select {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 0.5px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0 0 5px;
+}
+
+.date {
+  opacity: 0.5;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+}
