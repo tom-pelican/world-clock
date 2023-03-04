@@ -1,5 +1,9 @@
 body {
-  background: #f6f4fd;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
 }
 
 h1,
@@ -13,6 +17,8 @@ footer {
 h1 {
   text-align: center;
   font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2px;
 }
 
 select {
@@ -66,4 +72,12 @@ h2 {
 
 footer {
   text-align: center;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
 }
