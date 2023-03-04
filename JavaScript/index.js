@@ -15,7 +15,14 @@ updateTime();
 setInterval(updateTime, 1000);
 
 function changeCity(event) {
-  let cityTimeZone = event.target.value;
+  let cityTimeZone = "";
+
+  if (event.target.value.length > 0) {
+    cityTimeZone = event.target.value;
+  } else {
+    cityTimeZone = moment.tz.guess();
+  }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
