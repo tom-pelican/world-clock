@@ -3,8 +3,9 @@ function updateTime() {
   let cityNameElement = cityElement.querySelector(".city-name");
   let dateElement = cityElement.querySelector(".date");
   let timeElement = cityElement.querySelector(".time");
-  let cityGuess = moment.tz.guess().replace("_", " ").split("/")[1];
+  let cityGuess = moment.tz.guess();
   let cityTime = moment().tz(cityGuess);
+  cityGuess = cityGuess.replace("_", " ").split("/")[1];
 
   cityNameElement.innerHTML = cityGuess;
   dateElement.innerHTML = cityTime.format("MMMM Do YYYY");
